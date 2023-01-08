@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PORTFOLIO</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+		body {
+			background-color: black;
+			height: 100vh;
+			margin: 0;
+            padding: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-family: 'Play', sans-serif;
+
+		}
+		.image-container{
+			width: 50%;
+			height: 50%;
+		}
+		.text-container{
+			width: 50%;
+			height: 50%;
+			color: white;
+			font-size: 80px;
+			display: flex;
+			flex-direction: column;
+			/* align-items: center; */
+			justify-content: center;
+			text-align: left;
+			font-weight: 400;
+		}
+		span{
+			font-weight: 900;
+			color: aqua;
+		}
+		.image {
+			width: 90%;
+            height: 100%;
+		}
+		.btn {
+			width: 180px;
+			height: 60px;
+			cursor: pointer;
+			background: transparent;
+			border: 1px solid aqua;
+			outline: none;
+			transition: 1s ease-in-out;
+			margin-top: 30px;
+		}
+
+		svg {
+			position: absolute;
+			left: 0;
+			top: 0;
+			fill: none;
+			stroke: #fff;
+			stroke-dasharray: 150 480;
+			stroke-dashoffset: 150;
+			transition: 1s ease-in-out;
+		}
+
+		.btn:hover {
+			transition: 1s ease-in-out;
+			background: aqua;
+		}
+
+		.btn span {
+			color: white;
+			font-size: 18px;
+			font-weight: 100;
+		}		
+	</style>
+</head>
+<body>
+<div class="image-container">
+	<img class='image' src="./Me.jpeg" alt=""/>
+</div>
+<div class="text-container">
+	<div>Hi, I'm <span>Aissam</span> A web3 developer.</div>
+	<button class="btn" onclick="window.open('../MY_PORTFOLIO.pdf')">
+        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+        </svg>
+        <span>Download resume</span>
+	</div>
+	</body>
+</html>
